@@ -1,0 +1,21 @@
+{
+    "name": "wispc",
+    "version": "0.1.0",
+    "description": "Utility to compile wisp files.",
+    "author": "Jérémy Schoffen",
+    "license": "BSD New",<
+
+    "devDependencies": {
+	"wisp": "0.8.0"
+    },
+
+    "main": "./wispc.js",
+
+    "bin": {
+	"wispc": "./bin/wispc.js"
+    },
+
+    "scripts": {
+	"prepublish": "make all"
+  }
+}
