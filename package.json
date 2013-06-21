@@ -2,9 +2,18 @@
     "name": "wispc",
     "version": "0.1.0",
     "description": "Utility to compile wisp files.",
-    "author": "Jérémy Schoffen",
+    "author": { 
+	"name" : "Jeremy Schoffen", 
+	"email" : "jeremys.clj@icloud.com",
+	"url" : "https://github.com/JeremS"
+    },
+
     "homepage": "https://github.com/JeremS/wispc",
-    "license": "BSD New",
+
+    "licenses": [{
+	"type": "BSD New",
+	"url": "http://opensource.org/licenses/BSD-3-Clause"
+    }],
 
     "repository": {
 	"type": "git",
