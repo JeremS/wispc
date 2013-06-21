@@ -3,9 +3,11 @@
             [wisp.compiler :refer [compile*]]
             [wisp.reader :refer [read*]]))
 
-
+(defn compile-file [f]
+  (compile*
+   (read*
+    (fs.readFileSync f :utf8))))
 
 (defn main []
-  (console.log (compile*
-                (read*
-                 (fs.readFileSync (get process.argv 2) :utf8)))))
+  (console.log
+   (compile-file (get process.argv 2))))

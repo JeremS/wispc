@@ -3,11 +3,20 @@
     "version": "0.1.0",
     "description": "Utility to compile wisp files.",
     "author": "Jérémy Schoffen",
-    "license": "BSD New",<
+    "homepage": "https://github.com/JeremS/wispc",
+    "license": "BSD New",
 
-    "devDependencies": {
-	"wisp": "0.8.0"
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/JeremS/wispc.git",
+	"web": "https://github.com/JeremS/wispc"
     },
+
+    "bugs": {
+	"url": "https://github.com/JeremS/wispc/issues"
+    },
+
+    "keywords": ["wisp", "compiler"],
 
     "main": "./wispc.js",
 
@@ -15,7 +24,10 @@
 	"wispc": "./bin/wispc.js"
     },
 
+    "preferGlobal": true,
+
     "scripts": {
-	"prepublish": "make all"
-  }
+	"preinstall": "npm -g install wisp@\"0.8.0\"",
+	"postinstall": "make all"
+    }
 }

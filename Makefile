@@ -1,8 +1,6 @@
 MAIN = wispc.js
 
-all: main
-
-main:
+all: 
 	cat ./src/wispc.wisp | wisp > $(MAIN)
 
 clean:
