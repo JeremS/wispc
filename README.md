@@ -1,6 +1,6 @@
 # WISPC
 
-Utility tocompile wisp files
+Command line utility to compile wisp files.
 
 ## install 
 `npm install -g wispc`
